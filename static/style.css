@@ -19,7 +19,7 @@
     --border-light: #e1e8ed;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
-    --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.2);
+
     --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -31,63 +31,6 @@ body {
     display: flex;
     flex-direction: column;
     transition: var(--transition);
-}
-
-/* Navbar */
-.navbar {
-    background: var(--bg-white);
-    box-shadow: var(--shadow);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    transition: var(--transition);
-}
-
-.nav-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    font-size: 1.5rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.logo i {
-    font-size: 1.75rem;
-    color: var(--primary);
-}
-
-.theme-toggle {
-    background: var(--bg-light);
-    border: 2px solid var(--border-light);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: var(--primary);
-    font-size: 1.1rem;
-    transition: var(--transition);
-}
-
-.theme-toggle:hover {
-    background: var(--primary);
-    color: white;
-    border-color: var(--primary);
 }
 
 /* Main Container */
@@ -387,17 +330,6 @@ body.dark {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
 }
 
-body.dark .navbar {
-    background: #0f3460;
-    box-shadow: var(--shadow);
-}
-
-body.dark .logo {
-    -webkit-text-fill-color: unset;
-    background: unset;
-    color: var(--secondary);
-}
-
 body.dark .search-form {
     background: #0f3460;
     box-shadow: var(--shadow);
@@ -448,18 +380,6 @@ body.dark .disclaimer-card {
 
 body.dark .header-content {
     color: var(--text-light);
-}
-
-body.dark .theme-toggle {
-    background: #1a1a2e;
-    border-color: #2d3561;
-    color: var(--secondary);
-}
-
-body.dark .theme-toggle:hover {
-    background: var(--secondary);
-    color: #0f3460;
-    border-color: var(--secondary);
 }
 
 /* Responsive Design */
